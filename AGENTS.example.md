@@ -47,3 +47,15 @@ Pick one canonical sentence that describes the project. Use it word for word in 
 ## Commit style
 
 Conventional commits such as `feat:`, `fix:`, `docs:` and `chore:`. Present tense, one line. The pull request is the unit of review.
+
+## Keep the playbook current
+
+When working rules, review gates, routines, worktree practices or agent orchestration change, update the matching document in the team's private playbook during the same session. Generalize the lesson before writing it. Exclude secrets, client and project names, internal hosts, identifiers and local paths.
+
+Commit the documentation change and tell the user what changed. Before pushing, verify that the origin repository is private. If the visibility check fails or the repository is public, stop and ask. Push only to that private origin.
+
+## Commit attribution
+
+Set the author identity for each task explicitly so a shared agent account does not receive another person's work by default. Follow the agreed coauthor trailer format for assisted work and preserve existing contributor credit. Approving or merging a pull request alone does not establish authorship.
+
+For historical corrections, select exact commits and prepare an isolated preview. Preserve file contents, dates and merge authorship. Verify the rewritten graph and keep an original history backup. Obtain explicit approval before publishing a history rewrite and use a lease tied to the reviewed remote head.
