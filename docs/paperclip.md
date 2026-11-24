@@ -61,3 +61,15 @@ The source material does not cover these topics, so this page does not describe 
 - The adapters that connect the orchestrator to different agent runtimes, beyond the fact that they exist.
 
 If you need those, read the upstream documentation for the version you install.
+
+## Attribute work to the person directing the task
+
+A shared agent account is an execution identity. It does not establish who directed the work. Keep an explicit `Work directed by` entry in the private task description, backed by the human request. This is a workflow convention, not a built in field. Child tasks inherit it unless the human explicitly changes it. Resolve conflicting evidence before assigning human authorship. Autonomous work without an identified human director retains its agent attribution.
+
+Use a verified identity allowlist and set the Git author on each new commit with `git commit --author='NAME <EMAIL>' -F MESSAGE_FILE`. Leave the agent's committer identity and credentials unchanged. Do not modify global or shared repository Git configuration. Preserve third party authors and existing legitimate coauthor trailers. Credit an assistant only when it actually contributed, using its known identity rather than guessing from the orchestration tool.
+
+Before merging, verify that new work commits match the task attribution. Use a normal merge for these pull requests so the reviewed commits retain their authors. Keep all existing checks and independent review requirements. A squash may replace the primary author with the pull request account, so do not use it until the final author can be preserved and verified. After merging, confirm that the reviewed commits are ancestors of the main branch and retain their attribution. Approval or merging alone never transfers authorship.
+
+Apply the convention to both delegating and implementing agents, then to the independent review instructions. Read and back up each existing instruction file before editing. Use the current instruction revision in the update to avoid overwriting concurrent changes, then read it back and compare the exact content. Sessions already running must reload their instructions before committing or merging. A policy in instructions is not an automated enforcement hook and does not prove every active session has loaded it.
+
+If an instruction update requires instance administrator access, report which roles remain unchanged and request authorized access. Do not work around that permission check. If the command line client omits the revision parameter required by the server, use the supported API with the same credential and explicit base revision. Keep secrets out of command arguments and output.
