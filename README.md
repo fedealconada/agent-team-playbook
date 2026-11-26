@@ -12,6 +12,7 @@ This is one team's working setup, not a standard. Every rule below exists becaus
 | `docs/merge-gate-review-bot.md` | How to let agents merge their own work while an independent identity still has to approve it. |
 | `docs/ops-routines.md` | Scheduled agent routines, and a small guard that turns silent failures into alerts. |
 | `docs/paperclip.md` | How a self-hosted Paperclip instance governs agents and runs routines, and why changes go upstream instead of into a fork. |
+| `docs/choosing-the-lane.md` | Which changes go through the orchestrated team and which through a direct session, and who runs the full test suite |
 | `docs/shared-agent-config.md` | How to share global rules, skills and MCP servers across multiple coding agent CLIs without duplicating files. |
 | `docs/worktrees-parallel-agents.md` | How several agents work on one repository at the same time without colliding. |
 | `scripts/llm-guard.example.sh` | A generic version of the guard. It reads every secret from environment variables. |
