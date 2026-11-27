@@ -15,6 +15,7 @@ This is one team's working setup, not a standard. Every rule below exists becaus
 | `docs/choosing-the-lane.md` | Which changes go through the orchestrated team and which through a direct session, and who runs the full test suite |
 | `docs/shared-agent-config.md` | How to share global rules, skills and MCP servers across multiple coding agent CLIs without duplicating files. |
 | `docs/worktrees-parallel-agents.md` | How several agents work on one repository at the same time without colliding. |
+| `docs/skill-hygiene.md` | What each agent loads, how far guards reach, and how skills improve from real failures. |
 | `scripts/llm-guard.example.sh` | A generic version of the guard. It reads every secret from environment variables. |
 
 ## The rules, and why they exist
